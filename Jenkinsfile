@@ -4,12 +4,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                bat 'dir'
-                bat 'node --version'
-                bat 'npm --version'
-                bat 'npm install'
-                bat 'npm run build'
-                bat 'dir'
+                sh 'ls -la'
+                sh 'node --version'
+                sh 'npm --version'
+                sh 'npm install'
+                sh 'npm run build'
+                sh 'ls -la'
             }
         }
     }
